@@ -6,12 +6,16 @@ import android.R.menu
 import android.content.Intent
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.TextView
+import android.widget.Toast
 import android.widget.Toolbar
 
 
 class ProfileActivity : AppCompatActivity() {
 
-lateinit var mainToolbar :android.support.v7.widget.Toolbar
+private lateinit var mainToolbar :android.support.v7.widget.Toolbar
+    lateinit var edit : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +23,8 @@ lateinit var mainToolbar :android.support.v7.widget.Toolbar
         mainToolbar =  findViewById(R.id.my_toolbar);
         setSupportActionBar(mainToolbar)
         getSupportActionBar()!!.setDisplayShowTitleEnabled(false);
+
+
 
     }
 
@@ -35,5 +41,17 @@ lateinit var mainToolbar :android.support.v7.widget.Toolbar
             finish()
         }
         return super.onOptionsItemSelected(item)
+    }
+
+
+    fun editMethod(view :View){
+        edit = view.findViewById(R.id.editbutton)
+        Toast.makeText(this,"Animation ",Toast.LENGTH_SHORT).show()
+        if(edit.text.toString()=="Edit"){
+            edit.text="Done"
+        }else{
+            edit.text="Edit"
+        }
+
     }
 }

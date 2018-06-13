@@ -25,10 +25,12 @@
         >
 
             <TextView
+                android:id="@+id/editbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Edit"
                 android:textColor="@color/text_color_primary"
+                android:onClick="editMethod"
                 />
 
         <TextView
