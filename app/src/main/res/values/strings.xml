@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">TheSpikeApp</string>
+    <string name="spike_logo">Spike</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+
+
+    <string name="chart_text">All your data is safely logged in our app with available statistics to help you understand your diabetic condition better.</string>
+    <string name="map_text">Our location tracking algorithms track when you\'re at a restaurant to remind you of your medicine. </string>
+    <string name="notification_text">We notify you to take your medicine whenever you visit a restaurant, cafe or any other dining place.</string>
+
+
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="slogan">Diabetes management,\nless diabetic.</string>
+    <string name="AppName">Spike</string>
+    <string name="ProfileTitle">Profile</string>
+</resources>
