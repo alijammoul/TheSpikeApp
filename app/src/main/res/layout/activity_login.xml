@@ -25,20 +25,22 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/quick_sand"
-            android:textSize="@dimen/logo_text_size"
+            android:text="@string/AppName"
             android:textColor="@color/text_color_primary"
-            android:textStyle="bold"
-            android:text="@string/AppName" />
+            android:textSize="@dimen/logo_text_size"
+            android:textStyle="bold" />
 
         <TextView
-            android:layout_marginTop="10dp"
             android:id="@+id/sub_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/quick_sand"
-            android:textColor="@color/foreground_material_light"
             android:layout_gravity="center"
-            android:text="@string/slogan" />
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quick_sand"
+            android:gravity="center"
+            android:text="@string/slogan"
+            android:textColor="@color/foreground_material_light"
+            android:textSize="16sp" />
 
     </LinearLayout>
 
@@ -46,8 +48,9 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_margin="10dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toTopOf="@+id/tabDots"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,21 +77,18 @@
         app:layout_constraintTop_toBottomOf="@+id/pager"
         app:tabBackground="@drawable/tab_selector"
         app:tabGravity="center"
-        app:tabIndicatorHeight="0dp"
-        />
+        app:tabIndicatorHeight="0dp" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
-        android:layout_marginTop="8dp"
-        android:text="Login with Facebook"
+        android:text="Continue with Facebook(missing icon)"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabDots"
-        app:layout_constraintVertical_bias="0.242" />
+        app:layout_constraintTop_toBottomOf="@+id/tabDots" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
